@@ -1,0 +1,28 @@
+Doug Objectives:
+
+1. Practice HTML
+    a. Create boilerplate html
+        //Doctype tag signal type of document to browser
+        //html tag that specifies language
+        //reference: https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/
+        //head tag links style.css 
+        //head tag links index.js files properly (using defer in script tag or listener for DOM load event...also script can go at bottom of body)
+        //title tag defining name of app
+        
+    b. Create HTML element outline for Review App
+        //Review has a header: Princeton 🌹 Review
+        //Create body element tag for website content
+        //Create quiz, laugh, and quotes buttons
+        //Create div container for results from fetch response
+2. Practice JavaScript and DOM Manipulation
+    a. Add Event Listeners
+        //Laugh button renders a funny meme in the div container
+        //Quote button renders an inspiring quote in the div container
+        //Quiz button renders a piece of Flatiron trivia in the div container
+        //Quiz question has an event listener on it that when clicked reveals the answer
+3. Create db.Json
+    a. Create and test dbJson file to mock server
+        //Add all relevant objectives as trivia questions with their respective answers from the summary in FIS curriculum
+        //Think critically about the shape of objects and how we will manipulate and render the data 
+
+        
