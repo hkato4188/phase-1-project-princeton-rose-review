@@ -10,10 +10,11 @@ Doug Objectives:
         //title tag defining name of app
         
     b. Create HTML element outline for Review App
-        //Review has a header: Princeton 🌹 Review
-        //Create body element tag for website content
-        //Create quiz, laugh, and quotes buttons
-        //Create div container for results from fetch response
+        //COMPLETE DH: Review has a header: Princeton 🌹 Review
+        //COMPLETE DH: Create body element tag for website content
+        //COMPLETE DH: Create quiz, laugh, and quotes buttons
+        //Complete HK: Create div container for results from fetch response
+        //Complete HK: Create nav bar
 2. Practice JavaScript and DOM Manipulation
     a. Add Event Listeners
         //Laugh button renders a funny meme in the div container
