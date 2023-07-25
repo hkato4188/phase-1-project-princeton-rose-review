@@ -1,0 +1,24 @@
+{
+"quiz": [
+    {
+        "id": 1,
+        "question": "What declaration would you never use" ,
+        "Section": "Pre Work",
+        "answer": "Var"
+    }
+],
+"memes": [
+    {
+        "id": 1,
+        "imageUrl": "https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33be7eedf8e1f31aabcec_BwENfmI0CU5dZGYlSyo142mpfG08-rYgTS-Qm47uMUXN6JXtmdZvtzVzTooUQdXTWmTD8uzF9N6XQJA2vUIMi53tunFyVtvOBJTNfOjHit2P_JkTmFzFsK7ep6Vb9781XZnRAryH.png"
+    }
+
+],
+"quotes": [
+    {
+        "id": 1,
+        "quote": "Life is 10% what happens to you and 90% how you react to it.",
+        "author": "Charles R. Swindoll"
+    }
+]
+}
