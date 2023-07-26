@@ -58,7 +58,7 @@
     },
     {
       "id": 4,
-      "imageUrl": "https://www.instagram.com/p/CPxPDkMDh93/?utm_source=ig_embed&ig_rid=87b6282c-2757-47c3-86e2-adef50801094"
+      "imageUrl": "https://pd-beamliving-cd.beamliving.com/-/media/bu-to-ch/cat-meme-netflix-funny-1000x666.png"
     },
     {
       "id": 5,
@@ -90,6 +90,41 @@
       "id": 1,
       "quote": "Life is 10% what happens to you and 90% how you react to it.",
       "author": "Charles R. Swindoll"
-    }
+    },
+    {
+        "id": 2,
+        "quote": "There is a price to pay for speaking the truth. There is a bigger price for living a lie.",
+        "author": "Cornel West"
+      },
+      {
+        "id": 3,
+        "quote": "If you have knowledge, let others light their candles in it.",
+        "author": "Margaret Fuller"
+      },
+      {
+        "id": 4,
+        "quote": "Simplicity is prerequisite for reliability.",
+        "author": "Edsger W. Dijkstra"
+      },
+      {
+        "id": 5,
+        "quote": "There are three ingredients to the good life; learning, earning, and yearning.",
+        "author": "Christopher Morley"
+      },
+      {
+        "id": 6,
+        "quote": "Use the talents you possess, for the woods would be a very silent place if no birds sang except the best.",
+        "author": "Henry van Dyke"
+      },
+      {
+        "id": 7,
+        "quote": "Genius is the gold in the mine, talent is the miner who works and brings it out.",
+        "author": "Marguerite Gardiner"
+      },
+      {
+        "id": 8,
+        "quote": "Always make your past self jealous.",
+        "author": "Dove Chocolate"
+      }
   ]
 }
