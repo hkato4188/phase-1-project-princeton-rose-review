@@ -26,4 +26,14 @@ Doug Objectives:
         //Add all relevant objectives as trivia questions with their respective answers from the summary in FIS curriculum
         //Think critically about the shape of objects and how we will manipulate and render the data 
 
-        
+4. Hiro's debugging
+    a. Created img element in index.html for quotesBtn to render memes
+    b. Updated ccss on img tag to scale down meme image size
+    c. Updated quote section with blockquote html elements
+    d. Styled hr element
+    e. Unsure about info-box... turned to quiz-box
+    f. randomized all calls
+    g. configured html and js so that quiz questions, memes, and quotes render in the display card
+    h. updated getQuiz method to reveal answer after set interval of time 
+    i. added clock with pause and resume button to test study speed
+    

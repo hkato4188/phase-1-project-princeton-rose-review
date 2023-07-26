@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    
     <nav id="navbar">
         <h1>The Princeton 🌹 Review</h1>
         <ul>
@@ -16,16 +16,37 @@
             <li><a href="https://google.com/">Google</a></li>
         </ul>
     </nav>
-
-    <div id="card-display">
-
+    <hr>
+    <div id="quiz-box">
+        <h3 id="quiz-question">Ready to learn!?</h3>
+        
+        <h3 id="quiz-answer"></h3>
+        <span>
+            <h2>Timer: </h2>
+            <h1 id='counter'>
+            0
+          </h1>
+        </span>
+          <button id='pause' > pause </button>
     </div>
-
-    
-    
+    <br>
     <button id ="quizButton">Quiz</button>
     <button id ="laughButton">Laugh</button>
     <button id ="quoteButton">Quote</button>
-    <div id = "infoBox"></div>
+    <div id="card-display">
+        <blockquote>
+            <p id="quote-text"></p>
+            <footer>
+                <cite id="quote-author"></cite>
+            </footer>
+        </blockquote>
+        <hr>
+        <img id="display-image" src="" alt="">
+
+    </div>
+
+    <hr>
+    
+    
     <script src="index.js"></script>
 </body>
