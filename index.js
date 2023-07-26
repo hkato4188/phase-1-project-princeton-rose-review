@@ -31,9 +31,7 @@ memeBtn.addEventListener("click", () => {
 quoteBtn.addEventListener("click", () => {
   getQuotes();
 });
-
 addPauseButtonEventListener();
-
 incrementTimer();
 
 // Fetch functions grabbing data from the arrays
@@ -71,7 +69,7 @@ function giveQuiz(questionArr, index) {
   }, quizQuestionTime);
 
   setTimeout(() => {
-    quizAnswerElement.innerText = "";
+    quizQuestionElement.innerText = "";
     quizAnswerElement.innerText = "";
   }, quizQuestionTime * 3);
 }
@@ -109,6 +107,7 @@ function addPauseButtonEventListener() {
 function incrementTimer() {
   timerId = setInterval(incrementCounter, 1000);
 }
+
 function incrementCounter() {
   counterValue += 1;
   counterElement.innerText = counterValue;
