@@ -1,24 +1,95 @@
 {
-"quiz": [
+  "quiz": [
     {
-        "id": 1,
-        "question": "What declaration would you never use" ,
-        "Section": "Pre Work",
-        "answer": "Var"
-    }
-],
-"memes": [
+      "id": 1,
+      "question": "Describe a JavaScript event...",
+      "section": "JavaScript Events",
+      "answer": "Events are something the user does and JavaScript has the ability to listen and trigger work when it detects an event"
+    },
     {
-        "id": 1,
-        "imageUrl": "https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33be7eedf8e1f31aabcec_BwENfmI0CU5dZGYlSyo142mpfG08-rYgTS-Qm47uMUXN6JXtmdZvtzVzTooUQdXTWmTD8uzF9N6XQJA2vUIMi53tunFyVtvOBJTNfOjHit2P_JkTmFzFsK7ep6Vb9781XZnRAryH.png"
-    }
-
-],
-"quotes": [
+      "id": 2,
+      "question": "What is a variable?",
+      "section": "JavaScript Variables",
+      "answer": "A variable is a container in which we can store values for later retrieval"
+    },
     {
-        "id": 1,
-        "quote": "Life is 10% what happens to you and 90% how you react to it.",
-        "author": "Charles R. Swindoll"
+      "id": 3,
+      "question": "Name at least two JavaScript equality operators",
+      "section": "Comparisons in JavaScript",
+      "answer": "Strict Equality (===) | Strict Inequality (!==) | Loose Equality (==) | Loose Inequality (!=)"
+    },
+    {
+      "id": 4,
+      "question": "Describe what a JavaScript function is...",
+      "section": "Functions in JavaScript",
+      "answer": "A function is an object that contains a sequence of JavaScript statements or combined series of steps under a new function name."
+    },
+    {
+      "id": 5,
+      "question": "Describe what a JavaScript callback function is...",
+      "section": "Callback Functions",
+      "answer": "A function passed into another function wherein it might be invoked."
+    },
+    {
+      "id": 6,
+      "question": "Describe what a JavaScript callback function is...",
+      "section": "Callback Functions",
+      "answer": "A function passed into another function wherein it might be invoked."
+    },
+    {
+      "id": 7,
+      "question": "Describe what the DOM is...",
+      "section": "Introduction to the DOM",
+      "answer": "The DOM is the middle layer between the user and the underlying HTML, CSS, and JavaScript that make the page."
     }
-]
+  ],
+  "memes": [
+    {
+      "id": 1,
+      "imageUrl": "https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33be7eedf8e1f31aabcec_BwENfmI0CU5dZGYlSyo142mpfG08-rYgTS-Qm47uMUXN6JXtmdZvtzVzTooUQdXTWmTD8uzF9N6XQJA2vUIMi53tunFyVtvOBJTNfOjHit2P_JkTmFzFsK7ep6Vb9781XZnRAryH.png"
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33be6ace19c29d4e0cec7_LuyYKvSMNsoK3_Kgkfbw9Cwf-vF7gFtOyUnT6TogZ8vuN81S8hQWSTUh4_TpjkdUlQjr_0cOXJL2SyPT4KjX-RAVudOV7AH4JyP3K-zzaYIVCrvIpA31aoqB7dBjwSglYaJuFR4R.png"
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33be780ae86778720e367_Zoa5paPhsRtqzIki0flgfk3q7FGEh2VUa5DLxKQTC0KN4WIPvB_qPkMKAIWlsnXDU5ZVupBa4GuMskrt68jRC3aUuNECLsJFLxD_-FevEqq9yPvWpkX1wOJMSmg0J9QuMCdNgJ1L.png"
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://www.instagram.com/p/CPxPDkMDh93/?utm_source=ig_embed&ig_rid=87b6282c-2757-47c3-86e2-adef50801094"
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33be8cf4ba7565123c8bc_YPD3ulQQAGQpOcnqIm3QzSTRgzmr1SexpW9ZjMpJ1mAnUxx4iF05XOTu44sk0qQG-8XgBcYmGZGAD-5SAZvJl3TjtmhgWnn-w0C2XKwhBscV78RVvhwZfyp0v_Pa6sNj5zxpOvRW.png"
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33be85f6050c5b245f2f6_1udOmBABTV-r6BvrldjnVr1vWo6v0qfo0otkANYUrV8pIGVD5YpaiHY5z8ST7MeCdp0kbSDzcEvYXIuqN3l7-IHYNhodqED0un7vgcDv3wNTBy6YogJQTtz8JdAKeFADEX08SWOV.png"
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33beaa2121c403e729f3e_cFdC0T4-nFznndnWBG6Dx4sbRY_jGLBvCSq6BM_uXkJ_n3nL4pKSC_RPSlnAbDYDw0U_BNjM_mftxXGf0dwoRTp1vB5HWk1TJR6U-69iJLAugpxpnzRgXpxfI4Tr1talrjrJg0AP.png"
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33beaf630caf8b8625819_ojVfiY9N9W7SNblUwsMuRdEHfZaK7gTn4I8oA596jsQz0gHhJ0msEceYVq2C5afZ4rDCvhqx1EEedzTz664Vi3aDScXL2jnzV_uuWriJbW-wldzhpJDT-TNOPvgusibLRCqaY5pJ.png"
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33bebe21b5c24c32e38a8_oWwZHO7mmaoHlfdWFwBEAkdsJrSey53BJQft9vbKB-v5wSHy2ERBp--S-Q7DeaxVIfGHL4uwGPxmfRJo3UiJ2UxJZMUIkzlt0xAnjAzAWyg_7Nbz1p7J3U9M3tdsa4lR7f6qIuen.png"
+    },
+    {
+      "id": 10,
+      "imageUrl": "https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33bec95b39b4f2f1664eb_uFzJ2V9SG3VetDRh4tXkrtS1KqrppSecA7Quaw5sNKAxgCUXoaLUIMvKf6bcoXrpnwt43ugG5onRDKL7FnUPbCBaGDM1nuatJk3JvOtsL6PbTJpv6TzD9C2MERYd7hOWfkJjQSme.png"
+    }
+  ],
+  "quotes": [
+    {
+      "id": 1,
+      "quote": "Life is 10% what happens to you and 90% how you react to it.",
+      "author": "Charles R. Swindoll"
+    }
+  ]
 }
