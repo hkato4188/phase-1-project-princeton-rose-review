@@ -18,7 +18,7 @@ let counterIntervalId = 0;
 let timerId;
 let revealedAnswerTimerId;
 let answerClearTimerId;
-let quizQuestionTime = 5000;
+let quizQuestionTime = 3000;
 //Main code
 
 //Attaching event listeners to the buttons and getting response when clicked
@@ -63,7 +63,8 @@ function getQuotes() {
 //Function that asks a question in div and then the answer when the div is clicked
 function giveQuiz(questionArr, index) {
   quizQuestionElement.innerText = questionArr[index].question;
-
+  quizBtn.disabled = true
+  quizBtn.innerText = "Think!"
   setTimeout(() => {
     quizAnswerElement.innerText = `Answer: ${questionArr[index].answer}`;
   }, quizQuestionTime);
@@ -71,6 +72,8 @@ function giveQuiz(questionArr, index) {
   setTimeout(() => {
     quizQuestionElement.innerText = "";
     quizAnswerElement.innerText = "";
+    quizBtn.disabled = false
+    quizBtn.innerText = "Quiz"
   }, quizQuestionTime * 3);
 }
 
@@ -93,11 +96,11 @@ function generateRandomIndex(max) {
 
 function addPauseButtonEventListener() {
   pauseButton.addEventListener("click", () => {
-    if (pauseButton.innerText === "pause") {
+    if (pauseButton.innerText === "Pause") {
       clearInterval(timerId);
-      pauseButton.innerText = "resume";
+      pauseButton.innerText = "Resume";
     } else {
-      pauseButton.innerText = "pause";
+      pauseButton.innerText = "Pause";
 
       incrementTimer();
     }
