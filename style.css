@@ -132,6 +132,7 @@ button:active{
 
 #img-div{
     background: rgb(122, 203, 249); 
+    height: 320px;
 }
 
 #quiz-question{

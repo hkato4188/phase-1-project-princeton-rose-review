@@ -4,7 +4,7 @@ const quizUrl = baseUrl + "/quiz";
 const memeUrl = baseUrl + "/memes";
 const quoteUrl = baseUrl + "/quotes";
 const counterElement = document.getElementById("counter");
-const pauseButton = document.getElementById("pause");
+const pauseBtn = document.getElementById("pause");
 const quizBtn = document.getElementById("quizButton");
 const memeBtn = document.getElementById("laughButton");
 const quoteBtn = document.getElementById("quoteButton");
@@ -15,13 +15,12 @@ const quizQuestionElement = document.getElementById("quiz-question");
 const quizAnswerElement = document.getElementById("quiz-answer");
 let counterValue = counterElement.innerText * 1;
 let counterIntervalId = 0;
-let timerId;
 let revealedAnswerTimerId;
+let timerId;
 let answerClearTimerId;
 let quizQuestionTime = 3000;
-//Main code
 
-//Attaching event listeners to the buttons and getting response when clicked
+
 quizBtn.addEventListener("click", () => {
   getQuiz();
 });
@@ -31,7 +30,8 @@ memeBtn.addEventListener("click", () => {
 quoteBtn.addEventListener("click", () => {
   getQuotes();
 });
-addPauseButtonEventListener();
+
+addpauseBtnEventListener();
 incrementTimer();
 
 // Fetch functions grabbing data from the arrays
@@ -94,13 +94,13 @@ function generateRandomIndex(max) {
   return Math.floor(Math.random() * max);
 }
 
-function addPauseButtonEventListener() {
-  pauseButton.addEventListener("click", () => {
-    if (pauseButton.innerText === "Pause") {
+function addpauseBtnEventListener() {
+  pauseBtn.addEventListener("click", () => {
+    if (pauseBtn.innerText === "Pause") {
       clearInterval(timerId);
-      pauseButton.innerText = "Resume";
+      pauseBtn.innerText = "Resume";
     } else {
-      pauseButton.innerText = "Pause";
+      pauseBtn.innerText = "Pause";
 
       incrementTimer();
     }
