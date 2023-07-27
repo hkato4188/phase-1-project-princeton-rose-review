@@ -10,14 +10,12 @@
 
 <body>
     <header>
-
         <h1 id="page-title">The Princeton 🌹 Review</h1>
         <ul>
             <li><a href="https://learning.flatironschool.com/">Flatiron School</a></li>
             <li><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a></li>
             <li><a href="https://google.com/">Google</a></li>
         </ul>
-
     </header>
     <hr>
     <div id="main-flex-box">
@@ -26,18 +24,16 @@
             <h3 id="quiz-answer"></h3>
 
         </div>
-        <div id="button-div">
+        <div class="button-div">
             <button id="quizButton">Quiz</button>
-            
         </div>
-
         <div id="timer-div">
             <h2>Timer: </h2>
             <h1 id='counter'>
                 0
             </h1>
             <button id='pause'>Pause</button>
-
+            <button id='clear'>Clear</button>
         </div>
         <div id="quote-display">
             <blockquote id="quote-div">
@@ -46,25 +42,32 @@
                     <cite id="quote-author"></cite>
                 </footer>
             </blockquote>
-            <div id="button-div">
-               
+            <div class="button-div">
                 <button id="quoteButton">Quote</button>
             </div>
-    
         </div>
         <hr>
         <div id="img-div">
             <img id="display-image"
                 src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://www.collegiateparent.com/wp-content/uploads/2022/08/AdobeStock_429176281.jpg">
         </div>
-        <div id="button-div">
-            
+        <div class="button-div">
             <button id="laughButton">Laugh</button>
-            
         </div>
-
         <hr>
     </div>
-
+    
+    <div id="form-container">
+        <button id="addMemeButton">Add Meme</button>
+        <div id="meme-form-div"></div>
+    </div>
+    <div id="success"></div>
+    <div id="bottom-accent">
+        <p id="creators">Built by: Doug Hellberg and Hiro Kato</p>
+    </div>
+    <div class="button-div">
+        <button id="get-full-quiz">Get Full Quiz</button>
+    </div>
+    <div id="study-sheet"></div>
     <script src="index.js"></script>
 </body>

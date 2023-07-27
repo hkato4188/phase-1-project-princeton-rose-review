@@ -1,10 +1,15 @@
 //Global Const calls
 const baseUrl = "http://localhost:3000";
-const quizUrl = baseUrl + "/quiz";
-const memeUrl = baseUrl + "/memes";
-const quoteUrl = baseUrl + "/quotes";
+const quizDbUrl = baseUrl + "/quiz";
+const memeDbUrl = baseUrl + "/memes";
+const quoteDbUrl = baseUrl + "/quotes";
 const counterElement = document.getElementById("counter");
 const pauseBtn = document.getElementById("pause");
+const clearBtn = document.getElementById("clear");
+const fullQuizBtn = document.getElementById("get-full-quiz");
+const studySheet = document.getElementById('study-sheet')
+const addMemeBtn = document.getElementById("addMemeButton");
+const memeFormDiv = document.getElementById("meme-form-div");
 const quizBtn = document.getElementById("quizButton");
 const memeBtn = document.getElementById("laughButton");
 const quoteBtn = document.getElementById("quoteButton");
@@ -31,12 +36,15 @@ quoteBtn.addEventListener("click", () => {
   getQuotes();
 });
 
-addpauseBtnEventListener();
+addPauseBtnEventListener();
+addClearBtnEventListener();
+addNewMemeBtnEventListener()
+
 incrementTimer();
 
 // Fetch functions grabbing data from the arrays
 function getQuiz() {
-  fetch(quizUrl)
+  fetch(quizDbUrl)
     .then((res) => res.json())
     .then((questionArr) => {
       let randomQuestionIndex = generateRandomIndex(questionArr.length);
@@ -44,7 +52,7 @@ function getQuiz() {
     });
 }
 function getMemes() {
-  fetch(memeUrl)
+  fetch(memeDbUrl)
     .then((res) => res.json())
     .then((memeArr) => {
       let randomMemeIndex = generateRandomIndex(memeArr.length);
@@ -52,7 +60,7 @@ function getMemes() {
     });
 }
 function getQuotes() {
-  fetch(quoteUrl)
+  fetch(quoteDbUrl)
     .then((res) => res.json())
     .then((quoteArr) => {
       let randomQuoteIndex = generateRandomIndex(quoteArr.length);
@@ -67,6 +75,9 @@ function giveQuiz(questionArr, index) {
   quizBtn.innerText = "Think!"
   setTimeout(() => {
     quizAnswerElement.innerText = `Answer: ${questionArr[index].answer}`;
+    quizAnswerElement.addEventListener("copy", ()=>{
+      alert("I hope you aren't cheating!")
+    })
   }, quizQuestionTime);
 
   setTimeout(() => {
@@ -93,8 +104,15 @@ function giveQuote(quoteArr, index) {
 function generateRandomIndex(max) {
   return Math.floor(Math.random() * max);
 }
+function addClearBtnEventListener(){
+  clearBtn.addEventListener("click", ()=>{
+    clearInterval(timerId);
+    counterElement.innerText = 0;
+    counterValue = 0;
+  })
+}
 
-function addpauseBtnEventListener() {
+function addPauseBtnEventListener() {
   pauseBtn.addEventListener("click", () => {
     if (pauseBtn.innerText === "Pause") {
       clearInterval(timerId);
@@ -115,3 +133,77 @@ function incrementCounter() {
   counterValue += 1;
   counterElement.innerText = counterValue;
 }
+
+function addNewMemeBtnEventListener(){
+  addMemeBtn.onclick = ()=>{
+  
+    let memeForm = document.createElement('form');
+    let newMemeSubmitBtn = document.createElement('button')
+    let memeUrlInput = document.createElement('input');
+    newMemeSubmitBtn.innerText = "submit"
+    memeUrlInput.setAttribute("type", "text")
+    memeUrlInput.setAttribute("value", "")
+    memeUrlInput.setAttribute("placeholder", "Enter meme URL...")
+    memeUrlInput.setAttribute("id", "newMemeInput")
+    memeForm.appendChild(memeUrlInput)
+    memeForm.appendChild(newMemeSubmitBtn)
+    memeFormDiv.appendChild(memeForm)
+    
+    memeForm.addEventListener("submit", handleMemeSubmit)
+  }}
+function handleMemeSubmit(e){
+  e.preventDefault()
+    fetch(memeDbUrl, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        imageUrl: e.target[0].value
+      })
+    })
+    .then(res => res.json())
+    .then(data => {
+      displayImage.src = data.imageUrl
+      logSucces()
+    })
+  
+}
+
+function logSucces(){
+  console.log("i think we added something")
+  let successMessage = document.createElement('h3')
+  successMessage.innerText = "Thank you for the new addition!"
+  let successElement = document.getElementById('success')
+  successElement.appendChild(successMessage)
+  setTimeout(()=>{
+    successElement.remove()
+  },4000)
+  document.getElementById('newMemeInput').value = ""
+}
+
+fullQuizBtn.addEventListener("click", ()=>{
+  fetch(quizDbUrl)
+    .then(res => res.json())
+    .then(fullQuiz => {
+      studySheet.innerHTML = ""
+      for(let quesAnsPair in fullQuiz){
+        let qAorderListElem = document.createElement('ol') 
+        let questionLi = document.createElement('li')
+        questionLi.innerText = `Q: ${fullQuiz[quesAnsPair]["answer"]}`
+        let answerLi = document.createElement('li')
+        answerLi.innerText = `A: ${fullQuiz[quesAnsPair]["question"]}`
+        let sectionLi = document.createElement('li')
+        sectionLi.innerText = `Section: ${fullQuiz[quesAnsPair]["section"]}`
+        let lineBreak = document.createElement('br')
+        
+        qAorderListElem.appendChild(questionLi)
+        qAorderListElem.appendChild(answerLi)
+        qAorderListElem.appendChild(sectionLi)
+        qAorderListElem.appendChild(lineBreak)
+        studySheet.appendChild(qAorderListElem)
+      }
+      
+    })
+})

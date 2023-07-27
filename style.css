@@ -42,6 +42,11 @@ h2{
   padding-top: 10px;
 }
 
+h3{
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 ul {
   display: flex;
   flex-direction: row;
@@ -80,7 +85,7 @@ a{
   padding: 10px;
   
 }
-#button-div{
+.button-div{
     background: #f4da22;
     display: block;
     display: flex;
@@ -133,6 +138,9 @@ button:active{
 #img-div{
     background: rgb(122, 203, 249); 
     height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #quiz-question{
@@ -143,4 +151,47 @@ button:active{
 #quiz-answer{
     text-align: center;
     padding: 0 150 5 150;
+}
+
+#form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(122, 203, 249);
+  padding: 50px 0 20px;
+
+}
+
+#bottom-accent{
+  background-color: #ff2998;
+  height: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#form-div{
+  display: flex;
+  justify-content: center;
+  
+}
+#creators{
+  font-size: .8rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:yellow;
+  font-weight:900;
+  padding: 20px 0;
+}
+
+#study-sheet{
+  background-color: rgb(122, 203, 249); 
+
+}
+ol{
+  padding: 10px, 20px, 10px, 20px;
+}
+li{
+  display: block;
+  
+  margin: 5px;
 }

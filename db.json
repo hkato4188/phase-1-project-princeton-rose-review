@@ -83,6 +83,18 @@
     {
       "id": 10,
       "imageUrl": "https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33bec95b39b4f2f1664eb_uFzJ2V9SG3VetDRh4tXkrtS1KqrppSecA7Quaw5sNKAxgCUXoaLUIMvKf6bcoXrpnwt43ugG5onRDKL7FnUPbCBaGDM1nuatJk3JvOtsL6PbTJpv6TzD9C2MERYd7hOWfkJjQSme.png"
+    },
+    {
+      "imageUrl": "https://urlme.me/success/typed_a_url/made_a_meme.jpg?source=www",
+      "id": 11
+    },
+    {
+      "imageUrl": "https://www.paulbarrs.com/wp-content/uploads/2017/09/done.jpg",
+      "id": 12
+    },
+    {
+      "imageUrl": "https://www.paulbarrs.com/wp-content/uploads/2017/09/done.jpg",
+      "id": 13
     }
   ],
   "quotes": [
@@ -92,39 +104,39 @@
       "author": "Charles R. Swindoll"
     },
     {
-        "id": 2,
-        "quote": "There is a price to pay for speaking the truth. There is a bigger price for living a lie.",
-        "author": "Cornel West"
-      },
-      {
-        "id": 3,
-        "quote": "If you have knowledge, let others light their candles in it.",
-        "author": "Margaret Fuller"
-      },
-      {
-        "id": 4,
-        "quote": "Simplicity is prerequisite for reliability.",
-        "author": "Edsger W. Dijkstra"
-      },
-      {
-        "id": 5,
-        "quote": "There are three ingredients to the good life; learning, earning, and yearning.",
-        "author": "Christopher Morley"
-      },
-      {
-        "id": 6,
-        "quote": "Use the talents you possess, for the woods would be a very silent place if no birds sang except the best.",
-        "author": "Henry van Dyke"
-      },
-      {
-        "id": 7,
-        "quote": "Genius is the gold in the mine, talent is the miner who works and brings it out.",
-        "author": "Marguerite Gardiner"
-      },
-      {
-        "id": 8,
-        "quote": "Always make your past self jealous.",
-        "author": "Dove Chocolate"
-      }
+      "id": 2,
+      "quote": "There is a price to pay for speaking the truth. There is a bigger price for living a lie.",
+      "author": "Cornel West"
+    },
+    {
+      "id": 3,
+      "quote": "If you have knowledge, let others light their candles in it.",
+      "author": "Margaret Fuller"
+    },
+    {
+      "id": 4,
+      "quote": "Simplicity is prerequisite for reliability.",
+      "author": "Edsger W. Dijkstra"
+    },
+    {
+      "id": 5,
+      "quote": "There are three ingredients to the good life; learning, earning, and yearning.",
+      "author": "Christopher Morley"
+    },
+    {
+      "id": 6,
+      "quote": "Use the talents you possess, for the woods would be a very silent place if no birds sang except the best.",
+      "author": "Henry van Dyke"
+    },
+    {
+      "id": 7,
+      "quote": "Genius is the gold in the mine, talent is the miner who works and brings it out.",
+      "author": "Marguerite Gardiner"
+    },
+    {
+      "id": 8,
+      "quote": "Always make your past self jealous.",
+      "author": "Dove Chocolate"
+    }
   ]
 }
