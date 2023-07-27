@@ -7,7 +7,8 @@
 body {
   background: rgb(235, 233, 233);
   height: 100%;
-  width: 100%
+  width: 100%;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -21,7 +22,6 @@ img {
 
 hr {
   border-top: 10px dotted;
-  
   color: #ff2998;
 }
 
@@ -30,7 +30,7 @@ hr {
   padding: 50px 5px 10px 50px;
 }
 
-#navbar {
+header {
   background: #f4da22;
   font-weight: 700;
   font-size: smaller;
@@ -38,17 +38,31 @@ hr {
   
 }
 
-#navbar > ul {
-  display: flex;
-  flex-direction: row;
-  padding-left: 40%;
+h2{
+  padding-top: 10px;
 }
 
-#navbar > ul li {
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 40px;
+}
+
+ul li {
   list-style: none;
   text-align: right;
   padding-left: 5%;
   padding-bottom: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+a{
+  text-decoration: none;
+  color:#ff2998;
+  font-weight: 800;
+  cursor:cell;
 }
 
 #quiz-box {
@@ -75,13 +89,26 @@ hr {
 }
 
 button{
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 25%;
+    margin: 0 5px 5px 5px;
+    border-radius: 20px;
     font-size: 15px;
     padding: 10px;
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+    box-shadow: 0 5px darkslategray;
+    position: relative;
 }
 
+button:hover{
+  box-shadow: 0 4px darkslategray;
+  top: 2px;
+}
+
+button:active{
+  box-shadow: 0 0 darkslategray;
+  top: 5px;
+}
 
 #timer-div{
     background: rgb(122, 203, 249); 
@@ -97,14 +124,23 @@ button{
     margin-bottom: 3px;
 }
 
+#quote-div{
+  padding: 15px 200px 15px 200px;
+}
+
+
+
 #img-div{
     background: rgb(122, 203, 249); 
+    height: 320px;
 }
 
 #quiz-question{
-    text-align: center
+    text-align: center;
+    padding: 0px 50px 5px 50px;
 }
 
 #quiz-answer{
-    text-align: center
+    text-align: center;
+    padding: 0 150 5 150;
 }
