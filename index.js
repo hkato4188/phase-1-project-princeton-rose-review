@@ -167,6 +167,7 @@ function handleMemeSubmit(e){
     .then(data => {
       displayImage.src = data.imageUrl
       logSucces()
+      document.getElementById('newMemeInput').value = ""
     })
   
 }
@@ -180,7 +181,7 @@ function logSucces(){
   setTimeout(()=>{
     successElement.remove()
   },4000)
-  document.getElementById('newMemeInput').value = ""
+  
 }
 
 fullQuizBtn.addEventListener("click", ()=>{
