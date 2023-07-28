@@ -1,48 +1,60 @@
-//Global Const calls
+
 const baseUrl = "http://localhost:3000";
+
 const quizDbUrl = baseUrl + "/quiz";
-const memeDbUrl = baseUrl + "/memes";
-const quoteDbUrl = baseUrl + "/quotes";
+const fullQuizBtn = document.getElementById("get-full-quiz");
+const quizBtn = document.getElementById("quizButton");
+const studySheet = document.getElementById('study-sheet')
+const quizAnswerElement = document.getElementById("quiz-answer");
+const quizQuestionElement = document.getElementById("quiz-question");
+let quizQuestionTime = 3000;
+
+quizBtn.addEventListener("click", () => {
+  getQuiz();
+});
+
+
 const counterElement = document.getElementById("counter");
 const pauseBtn = document.getElementById("pause");
 const clearBtn = document.getElementById("clear");
-const fullQuizBtn = document.getElementById("get-full-quiz");
-const studySheet = document.getElementById('study-sheet')
-const addMemeBtn = document.getElementById("addMemeButton");
-const memeFormDiv = document.getElementById("meme-form-div");
-const quizBtn = document.getElementById("quizButton");
-const memeBtn = document.getElementById("laughButton");
-const quoteBtn = document.getElementById("quoteButton");
-const displayImage = document.getElementById("display-image");
-const quoteTextElement = document.getElementById("quote-text");
-const quoteAuthorElement = document.getElementById("quote-author");
-const quizQuestionElement = document.getElementById("quiz-question");
-const quizAnswerElement = document.getElementById("quiz-answer");
 let counterValue = counterElement.innerText * 1;
 let counterIntervalId = 0;
 let revealedAnswerTimerId;
 let timerId;
 let answerClearTimerId;
-let quizQuestionTime = 3000;
+incrementTimer();
+addPauseBtnEventListener();
+addClearBtnEventListener();
 
 
-quizBtn.addEventListener("click", () => {
-  getQuiz();
-});
+
+const memeDbUrl = baseUrl + "/memes";
+const addMemeBtn = document.getElementById("addMemeButton");
+const memeFormDiv = document.getElementById("meme-form-div");
+const memeBtn = document.getElementById("laughButton");
+const displayImage = document.getElementById("display-image");
+
+addNewMemeBtnEventListener()
 memeBtn.addEventListener("click", () => {
   getMemes();
 });
+
+
+const quoteDbUrl = baseUrl + "/quotes";
+const quoteBtn = document.getElementById("quoteButton");
+const quoteTextElement = document.getElementById("quote-text");
+const quoteAuthorElement = document.getElementById("quote-author");
+
 quoteBtn.addEventListener("click", () => {
   getQuotes();
 });
 
-addPauseBtnEventListener();
-addClearBtnEventListener();
-addNewMemeBtnEventListener()
 
-incrementTimer();
+
+
 
 // Fetch functions grabbing data from the arrays
+
 function getQuiz() {
   fetch(quizDbUrl)
     .then((res) => res.json())
@@ -109,6 +121,7 @@ function addClearBtnEventListener(){
     clearInterval(timerId);
     counterElement.innerText = 0;
     counterValue = 0;
+    pauseBtn.innerText = "Resume"
   })
 }
 
