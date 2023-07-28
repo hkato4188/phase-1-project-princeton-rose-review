@@ -141,7 +141,7 @@ function addNewMemeBtnEventListener() {
 }
 function handleMemeSubmit(e) {
   e.preventDefault();
-  fetch(`${baseUrl}/meme`, {
+  fetch(`${baseUrl}/memes`, {
     method: "POST",
     headers: {
       Accept: "application/json",

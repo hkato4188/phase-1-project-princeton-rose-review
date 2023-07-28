@@ -20,8 +20,10 @@
 - ###### Monitor and improve your response time with our stop watch timer
 
 ### Installation:
-1. Fork this repo to your GitHub accouont
+1. Fork this repo to your GitHub account
 2. Clone this repo to your local machine
 3. Open the index.html file in your browser
-4. Study, laugh, think, and feel free to add your own personalized memes!
+4. Install JSON server globally on your machine: npm install -g json-server
+4. Run the json server within the Phase-1-Project-Princeton-Rose-Review directory json-server --watch db.json
+5. Study, laugh, think, and feel free to add your own personalized memes!
 
