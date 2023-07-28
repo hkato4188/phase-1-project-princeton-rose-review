@@ -1,6 +1,8 @@
 # **The Princeton 🌹 Review: **
 #### Flatiron School's premier study tool.
 
+![image](https://github.com/hkato4188/phase-1-project-princeton-rose-review/assets/33362332/d086bfb2-cee8-4bd6-830b-ab23f7e5739b)
+
 ---
 
 ## Features:
