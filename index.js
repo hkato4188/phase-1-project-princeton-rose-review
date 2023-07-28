@@ -81,7 +81,7 @@ function renderQuizQuestion(questionArr, index) {
   }, quizQuestionTime);
   setTimeout(() => {
     quizQuestionElement.innerText = "";
-    quizAnswerElement.remove()
+    quizAnswerElement.innerText = "";
     quizBtn.disabled = false;
     quizBtn.innerText = "Quiz";
   }, quizQuestionTime * 3);
@@ -200,7 +200,6 @@ function addPauseBtnEventListener() {
       pauseBtn.innerText = "Resume";
     } else {
       pauseBtn.innerText = "Pause";
-
       incrementTimer();
     }
   });
